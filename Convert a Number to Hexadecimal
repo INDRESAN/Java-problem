@@ -1,0 +1,6 @@
+class Solution {
+    public String toHex(int num) {
+        String hexa=Integer.toHexString(num);
+        return hexa;
+    }
+}
