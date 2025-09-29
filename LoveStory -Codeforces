@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int input=sc.nextInt();
+		sc.nextLine();
+		for(int i=0;i<input;i++) {
+			String s=sc.next();
+			int n=s.length();
+			String s1="codeforces";
+			boolean flag=true;
+			for(int j=0;j<n;j++) {
+				if(s.charAt(j)!=s1.charAt(j)) {
+					System.out.println("NO");
+				}
+			}
+			if(flag){
+				System.out.print("YES");
+			}
+		}
+	}
+}
